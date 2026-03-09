@@ -150,45 +150,11 @@ Example Output
 
 ---
 
-# 🔗 API Endpoint
-
-POST request:
-
-```
-POST /api/ask
-```
-
-Example JSON request:
-
-```
-{
-"text": "fever cough chest pain",
-"lang": "en"
-}
-```
-
-Example Response:
-
-```
-{
-  "predictions":[...],
-  "matched":[...]
-}
-```
+<img width="1102" height="648" alt="image" src="https://github.com/user-attachments/assets/40461909-f4f4-431b-91a9-f514e843226c" />
 
 ---
 
-# 🚀 Future Improvements
-
-🔹 Deep Learning symptom classification
-🔹 Larger medical dataset
-🔹 Doctor recommendation system
-🔹 Multi-language support
-🔹 Mobile app integration
-🔹 Integration with hospital APIs
+<img width="1128" height="956" alt="image" src="https://github.com/user-attachments/assets/d9f2fe05-e1d1-4d06-8270-176ef074bc4b" />
 
 ---
 
-# 👨‍💻 Author
-
-Developed as an AI + Web Development project demonstrating the integration of Machine Learning, NLP, and Flask for healthcare assistance.
