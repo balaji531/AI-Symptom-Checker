@@ -1,0 +1,483 @@
+
+[
+  {
+    "id": "flu",
+    "name": {
+      "en": "Influenza (Flu)",
+      "ta": "காய்ச்சல் (ஃப்ளூ)"
+    },
+    "symptoms": {
+      "en": ["fever", "cough", "sore throat", "fatigue"],
+      "ta": ["காய்ச்சல்", "இருமல்", "தொண்டை வலி", "சோர்வு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "common_cold",
+    "name": {
+      "en": "Common Cold",
+      "ta": "சாதாரண சளி"
+    },
+    "symptoms": {
+      "en": ["runny nose", "sneezing", "cough"],
+      "ta": ["மூக்கு ஒழுகுதல்", "தும்மல்", "இருமல்"]
+    },
+    "triage": "SELF-CARE"
+  },
+  {
+    "id": "covid19",
+    "name": {
+      "en": "COVID-19",
+      "ta": "கோவிட்-19"
+    },
+    "symptoms": {
+      "en": ["fever", "cough", "loss of smell", "shortness of breath"],
+      "ta": ["காய்ச்சல்", "இருமல்", "மணம் இழப்பு", "மூச்சுத்திணறல்"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "pneumonia",
+    "name": {
+      "en": "Pneumonia",
+      "ta": "நிமோனியா"
+    },
+    "symptoms": {
+      "en": ["fever", "cough", "chest pain", "shortness of breath"],
+      "ta": ["காய்ச்சல்", "இருமல்", "மார்பு வலி", "மூச்சுத்திணறல்"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "migraine",
+    "name": {
+      "en": "Migraine",
+      "ta": "மைக்ரேன்"
+    },
+    "symptoms": {
+      "en": ["headache", "nausea", "sensitivity to light"],
+      "ta": ["தலைவலி", "வாந்தி உணர்வு", "ஒளி உணர்திறன் அதிகரிப்பு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "gastro",
+    "name": {
+      "en": "Gastroenteritis",
+      "ta": "வயிற்றுப்போக்கு தொற்று"
+    },
+    "symptoms": {
+      "en": ["diarrhea", "vomiting", "abdominal pain"],
+      "ta": ["வயிற்றுப்போக்கு", "வாந்தி", "வயிற்று வலி"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "uti",
+    "name": {
+      "en": "Urinary Tract Infection",
+      "ta": "மூத்திர பாதை தொற்று"
+    },
+    "symptoms": {
+      "en": ["burning urination", "frequent urination", "lower abdominal pain"],
+      "ta": ["மூத்திரம் கழிக்கும் போது எரிச்சல்", "அடிக்கடி மூத்திரம்", "கீழ் வயிற்று வலி"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "appendicitis",
+    "name": {
+      "en": "Appendicitis",
+      "ta": "அபெண்டிசைட்டிஸ்"
+    },
+    "symptoms": {
+      "en": ["right lower abdominal pain", "fever", "nausea"],
+      "ta": ["வலது கீழ் வயிற்று வலி", "காய்ச்சல்", "வாந்தி உணர்வு"]
+    },
+    "triage": "EMERGENCY"
+  },
+  {
+    "id": "kidney_stone",
+    "name": {
+      "en": "Kidney Stone",
+      "ta": "சிறுநீரக கல்"
+    },
+    "symptoms": {
+      "en": ["severe flank pain", "blood in urine", "nausea"],
+      "ta": ["கடுமையான பக்கவாட்டு வலி", "மூத்திரத்தில் இரத்தம்", "வாந்தி உணர்வு"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "dengue",
+    "name": {
+      "en": "Dengue",
+      "ta": "டெங்கு"
+    },
+    "symptoms": {
+      "en": ["high fever", "severe headache", "joint pain", "rash"],
+      "ta": ["உயர் காய்ச்சல்", "கடுமையான தலைவலி", "மூட்டு வலி", "சருமத்தில் சிரங்கு"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "malaria",
+    "name": {
+      "en": "Malaria",
+      "ta": "மலேரியா"
+    },
+    "symptoms": {
+      "en": ["fever", "chills", "sweats", "headache"],
+      "ta": ["காய்ச்சல்", "சளசளப்பு", "வியர்வை", "தலைவலி"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "allergy",
+    "name": {
+      "en": "Allergy",
+      "ta": "அலர்ஜி"
+    },
+    "symptoms": {
+      "en": ["rash", "itching", "sneezing"],
+      "ta": ["சரும சிரங்கு", "அரிப்பு", "தும்மல்"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "anaphylaxis",
+    "name": {
+      "en": "Anaphylaxis",
+      "ta": "அனாபிலாக்சிஸ்"
+    },
+    "symptoms": {
+      "en": ["difficulty breathing", "swelling", "hives"],
+      "ta": ["மூச்சு விட சிரமம்", "வீக்கம்", "அரிப்பு தழும்புகள்"]
+    },
+    "triage": "EMERGENCY"
+  },
+  {
+    "id": "asthma",
+    "name": {
+      "en": "Asthma",
+      "ta": "ஆஸ்துமா"
+    },
+    "symptoms": {
+      "en": ["wheezing", "shortness of breath", "cough"],
+      "ta": ["விசில் போன்ற சத்தம்", "மூச்சுத்திணறல்", "இருமல்"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "bronchitis",
+    "name": {
+      "en": "Bronchitis",
+      "ta": "பிராங்கைட்டிஸ்"
+    },
+    "symptoms": {
+      "en": ["cough", "mucus", "fatigue"],
+      "ta": ["இருமல்", "சளி", "சோர்வு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "otitis",
+    "name": {
+      "en": "Otitis Media",
+      "ta": "காது தொற்று"
+    },
+    "symptoms": {
+      "en": ["ear pain", "fever", "hearing loss"],
+      "ta": ["காது வலி", "காய்ச்சல்", "கேள்வித் திறன் குறைவு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "conjunctivitis",
+    "name": {
+      "en": "Conjunctivitis",
+      "ta": "கண் சிவப்பு (பிங்க் ஐ)"
+    },
+    "symptoms": {
+      "en": ["red eye", "itching", "discharge"],
+      "ta": ["கண் சிவப்பு", "அரிப்பு", "கண் சீழ்"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "cellulitis",
+    "name": {
+      "en": "Cellulitis",
+      "ta": "செல்லுலைட்டிஸ்"
+    },
+    "symptoms": {
+      "en": ["red swollen skin", "fever", "pain"],
+      "ta": ["சிவப்பு வீக்கம் உள்ள தோல்", "காய்ச்சல்", "வலி"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "sepsis",
+    "name": {
+      "en": "Sepsis",
+      "ta": "சீப்சிஸ்"
+    },
+    "symptoms": {
+      "en": ["fever", "rapid heart rate", "confusion"],
+      "ta": ["காய்ச்சல்", "இதய துடிப்பு அதிகரிப்பு", "குழப்பம்"]
+    },
+    "triage": "EMERGENCY"
+  },
+  {
+    "id": "mi",
+    "name": {
+      "en": "Myocardial Infarction",
+      "ta": "இதயக் குத்து (ஹார்ட் அட்டாக்)"
+    },
+    "symptoms": {
+      "en": ["chest pain", "shortness of breath", "sweating"],
+      "ta": ["மார்பு வலி", "மூச்சுத்திணறல்", "வியர்வை"]
+    },
+    "triage": "EMERGENCY"
+  },
+  {
+    "id": "typhoid",
+    "name": {
+      "en": "Typhoid Fever",
+      "ta": "டைபாய்டு காய்ச்சல்"
+    },
+    "symptoms": {
+      "en": ["high fever", "abdominal pain", "weakness", "constipation or diarrhea"],
+      "ta": ["உயர் காய்ச்சல்", "வயிற்று வலி", "பலவீனம்", "மலச்சிக்கல் அல்லது வயிற்றுப்போக்கு"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "tuberculosis",
+    "name": {
+      "en": "Tuberculosis",
+      "ta": "காசநோய்"
+    },
+    "symptoms": {
+      "en": ["chronic cough", "weight loss", "night sweats", "fever"],
+      "ta": ["நீண்டகால இருமல்", "எடை இழப்பு", "இரவு வியர்வை", "காய்ச்சல்"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "chickenpox",
+    "name": {
+      "en": "Chickenpox",
+      "ta": "சின்னம்மை"
+    },
+    "symptoms": {
+      "en": ["fever", "itchy rash", "fatigue"],
+      "ta": ["காய்ச்சல்", "அரிப்பு சிரங்கு", "சோர்வு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "measles",
+    "name": {
+      "en": "Measles",
+      "ta": "சாம்பல் காய்ச்சல்"
+    },
+    "symptoms": {
+      "en": ["fever", "rash", "red eyes", "cough"],
+      "ta": ["காய்ச்சல்", "சிரங்கு", "கண் சிவப்பு", "இருமல்"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "mumps",
+    "name": {
+      "en": "Mumps",
+      "ta": "கன்னம்மை"
+    },
+    "symptoms": {
+      "en": ["swollen cheeks", "fever", "headache"],
+      "ta": ["கன்ன வீக்கம்", "காய்ச்சல்", "தலைவலி"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "hepatitis_b",
+    "name": {
+      "en": "Hepatitis B",
+      "ta": "ஹெபடைட்டிஸ் பி"
+    },
+    "symptoms": {
+      "en": ["jaundice", "fatigue", "abdominal pain"],
+      "ta": ["மஞ்சள் காமாலை", "சோர்வு", "வயிற்று வலி"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "stroke",
+    "name": {
+      "en": "Stroke",
+      "ta": "பக்கவாதம்"
+    },
+    "symptoms": {
+      "en": ["sudden weakness", "slurred speech", "facial drooping"],
+      "ta": ["திடீர் பலவீனம்", "மெதுவான பேச்சு", "முக சாய்வு"]
+    },
+    "triage": "EMERGENCY"
+  },
+  {
+    "id": "epilepsy",
+    "name": {
+      "en": "Epilepsy",
+      "ta": "மின்சாதை நோய்"
+    },
+    "symptoms": {
+      "en": ["seizures", "confusion", "loss of consciousness"],
+      "ta": ["வலி பிடித்தல்", "குழப்பம்", "உணர்வு இழப்பு"]
+    },
+    "triage": "EMERGENCY"
+  },
+  {
+    "id": "hypertension",
+    "name": {
+      "en": "Hypertension",
+      "ta": "உயர் இரத்த அழுத்தம்"
+    },
+    "symptoms": {
+      "en": ["headache", "dizziness", "blurred vision"],
+      "ta": ["தலைவலி", "மயக்கம்", "மங்கலான பார்வை"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "diabetes",
+    "name": {
+      "en": "Diabetes Mellitus",
+      "ta": "நீரிழிவு நோய்"
+    },
+    "symptoms": {
+      "en": ["frequent urination", "increased thirst", "weight loss"],
+      "ta": ["அடிக்கடி சிறுநீர்", "அதிக தாகம்", "எடை இழப்பு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "dehydration",
+    "name": {
+      "en": "Dehydration",
+      "ta": "நீரிழப்பு"
+    },
+    "symptoms": {
+      "en": ["dry mouth", "dizziness", "reduced urination"],
+      "ta": ["வாய் உலர்வு", "மயக்கம்", "சிறுநீர் குறைவு"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "food_poisoning",
+    "name": {
+      "en": "Food Poisoning",
+      "ta": "உணவு விஷம்"
+    },
+    "symptoms": {
+      "en": ["vomiting", "diarrhea", "stomach cramps"],
+      "ta": ["வாந்தி", "வயிற்றுப்போக்கு", "வயிற்று பிடிப்பு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "meningitis",
+    "name": {
+      "en": "Meningitis",
+      "ta": "மெனிஞ்ஜைட்டிஸ்"
+    },
+    "symptoms": {
+      "en": ["severe headache", "neck stiffness", "fever"],
+      "ta": ["கடுமையான தலைவலி", "கழுத்து இறுக்கம்", "காய்ச்சல்"]
+    },
+    "triage": "EMERGENCY"
+  },
+  {
+    "id": "acid_reflux",
+    "name": {
+      "en": "Acid Reflux (GERD)",
+      "ta": "அமிலம் மீள்வது"
+    },
+    "symptoms": {
+      "en": ["heartburn", "chest discomfort", "sour taste"],
+      "ta": ["மார்பு எரிச்சல்", "மார்பு அசௌகரியம்", "புளிப்பு சுவை"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "sinusitis",
+    "name": {
+      "en": "Sinusitis",
+      "ta": "சைனஸைட்டிஸ்"
+    },
+    "symptoms": {
+      "en": ["facial pain", "blocked nose", "headache"],
+      "ta": ["முக வலி", "மூக்கு அடைப்பு", "தலைவலி"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "psoriasis",
+    "name": {
+      "en": "Psoriasis",
+      "ta": "சொரியாசிஸ்"
+    },
+    "symptoms": {
+      "en": ["scaly skin", "itching", "red patches"],
+      "ta": ["படுகுட்டை தோல்", "அரிப்பு", "சிவப்பு தழும்புகள்"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "thyroid_disorder",
+    "name": {
+      "en": "Thyroid Disorder",
+      "ta": "தைராய்டு கோளாறு"
+    },
+    "symptoms": {
+      "en": ["weight changes", "fatigue", "palpitations"],
+      "ta": ["எடை மாற்றம்", "சோர்வு", "இதய துடிப்பு அதிகரிப்பு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "depression",
+    "name": {
+      "en": "Depression",
+      "ta": "மனஅழுத்தம்"
+    },
+    "symptoms": {
+      "en": ["sadness", "loss of interest", "sleep disturbance"],
+      "ta": ["துக்கம்", "ஆர்வ இழப்பு", "தூக்க குறைவு"]
+    },
+    "triage": "GP"
+  },
+  {
+    "id": "panic_attack",
+    "name": {
+      "en": "Panic Attack",
+      "ta": "பதட்டம் தாக்குதல்"
+    },
+    "symptoms": {
+      "en": ["rapid heartbeat", "chest tightness", "fear"],
+      "ta": ["இதய துடிப்பு அதிகரிப்பு", "மார்பு இறுக்கம்", "பயம்"]
+    },
+    "triage": "URGENT"
+  },
+  {
+    "id": "heat_stroke",
+    "name": {
+      "en": "Heat Stroke",
+      "ta": "வெயில் தாக்கம்"
+    },
+    "symptoms": {
+      "en": ["high body temperature", "confusion", "dry skin"],
+      "ta": ["உயர் உடல் வெப்பம்", "குழப்பம்", "உலர் தோல்"]
+    },
+    "triage": "EMERGENCY"
+  }
+]

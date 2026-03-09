@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Medical Symptom Checker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+select, button {
+    padding: 8px 12px;
+    margin-top: 10px;
+}
+
+button {
+    background: #4da6ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #2d8ce0;
+}
+
+.card {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+}
+
+.emergency {
+    background: #ff4d4d;
+}
+
+.urgent {
+    background: #ff9933;
+}
+
+.gp {
+    background: #4da6ff;
+}
+
+.self {
+    background: #33cc66;
+}
+
+.matched {
+    background: #eef3ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>AI Medical Symptom Checker</h1>
+
+    <form method="POST">
+        <label><strong>Select Language:</strong></label><br>
+        <select name="lang">
+            {% for code, name in langs.items() %}
+            <option value="{{code}}" {% if selected==code %}selected{% endif %}>{{name}}</option>
+            {% endfor %}
+        </select>
+
+        <br><br>
+
+        <label><strong>Enter Your Symptoms:</strong></label>
+        <textarea name="symptoms" placeholder="Type symptoms here..."></textarea>
+
+        <br>
+        <button type="submit">Check Symptoms</button>
+    </form>
+
+    {% if result %}
+
+        {% if result.matched %}
+        <div class="matched">
+            <strong>Matched Symptoms:</strong><br>
+            {{ result.matched | join(", ") }}
+        </div>
+        {% endif %}
+
+        <h3 style="margin-top:20px;">Top Predictions:</h3>
+
+        {% for item in result.predictions %}
+        <div class="card">
+
+            <h3>
+                {% if selected == 'ta' %}
+                    {{ item.name_ta }}
+                {% else %}
+                    {{ item.name_en }}
+                {% endif %}
+            </h3>
+
+            <p><strong>Confidence:</strong> {{ item.confidence }}%</p>
+
+            {% if item.triage == "EMERGENCY" %}
+                <span class="badge emergency">EMERGENCY</span>
+            {% elif item.triage == "URGENT" %}
+                <span class="badge urgent">URGENT</span>
+            {% elif item.triage == "GP" %}
+                <span class="badge gp">GP</span>
+            {% elif item.triage == "SELF-CARE" %}
+                <span class="badge self">SELF-CARE</span>
+            {% endif %}
+
+        </div>
+        {% endfor %}
+
+    {% endif %}
+
+    <div class="footer">
+        ⚠ This tool provides informational support only and is not a medical diagnosis.
+    </div>
+
+</div>
+
+</body>
+</html>
