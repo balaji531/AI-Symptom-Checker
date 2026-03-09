@@ -60,10 +60,6 @@ cd ai-symptom-checker
 python -m venv venv
 ```
 
-Activate:
-
-Windows
-
 ```
 venv\Scripts\activate
 ```
@@ -85,16 +81,6 @@ cd backend
 python train_model.py
 ```
 
-This generates:
-
-```
-model.joblib
-vec.joblib
-classes.joblib
-```
-
----
-
 ## 5️⃣ Run the Application
 
 ```
@@ -111,26 +97,13 @@ http://localhost:5001
 
 # 🧠 Machine Learning Pipeline
 
-1️⃣ Load disease dataset (`diseases.json`)
-2️⃣ Extract symptoms in **English and Tamil**
-3️⃣ Convert symptoms to numeric vectors using **TF-IDF**
-4️⃣ Encode disease labels using **LabelEncoder**
-5️⃣ Train **Logistic Regression classifier**
-6️⃣ Save model using **Joblib**
-7️⃣ Flask loads the model and predicts diseases from user input
-
----
-
-# 🚨 Emergency Detection
-
-The system detects critical symptoms such as:
-
-* Chest pain
-* Shortness of breath
-* Confusion
-* Severe headache
-
-If detected, the system immediately recommends **Emergency medical attention**.
+- Load disease dataset (`diseases.json`)
+- Extract symptoms in **English and Tamil**
+- Convert symptoms to numeric vectors using **TF-IDF**
+- Encode disease labels using **LabelEncoder**
+- Train **Logistic Regression classifier**
+- Save model using **Joblib**
+- Flask loads the model and predicts diseases from user input
 
 ---
 
